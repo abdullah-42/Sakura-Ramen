@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sakura Ramen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script defer src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Economica&family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Economica&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--  1.Seite      "<...></...>" ist immer eine div ------------>
+    <div class="firstP" id="home">
+      <!-- Nav -->
+      <div class="navbar" id="fixedNav">
+        <!-- links -->
+        <a href="#home"> <img src="img/saku.png" width="70px" /></a>
+        <!-- rechts -->
+        <div class="nav">
+          <a href="#menu">MENU</a>
+          <a href="#location">LOCATIONS</a>
+          <a href="#">ABOUT</a>
+          <a id="phone" href="#">
+            <img src="img/phone.png" />
+            01761234567
+          </a>
+        </div>
+      </div>
+      <!-- Überschrift -->
+      <div class="title">
+        <h1 class="hidden">SAKURA RAMEN</h1>
+        <p>THE BEST RAMEN IN TOWN</p>
+      </div>
+    </div>
+
+    <!-- 2.Seite ------------------------------------>
+    <div class="secondP">
+      <h2
+        style="
+          font-family: 'Raleway', sans-serif;
+          text-align: center;
+          font-size: 400%;
+          color: rgb(177, 65, 65);
+        "
+      >
+        HOW TO ORDER
+      </h2>
+
+      <div class="orderContainer">
+        <div class="pick hiddenOrder">
+          <img src="img/oie_transparent2.png" />
+          <p class="pickText">
+            Pick <br />
+            Your Noodle
+          </p>
+        </div>
+
+        <div class="pick hiddenOrder">
+          <img src="img/broth_icon.png" />
+          <p class="pickText">
+            Pick <br />
+            Your Broth
+          </p>
+        </div>
+
+        <div class="pick hiddenOrder">
+          <img src="img/oie_transparent.png" />
+          <p class="pickText">
+            Add Your <br />
+            Toppings
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3.Seite ------------------------------------>
+    <div class="thirdP" id="menu">
+      <h2>OUR MENU</h2>
+
+      <div class="ramenContainer">
+        <div class="menu">
+          <img src="img/r1.png" />
+
+          <table>
+            <th>Tonkasu Ramen</th>
+            <tr>
+              <td>CHICKEN</td>
+              <td>11.95€</td>
+            </tr>
+            <tr>
+              <td>BEEF</td>
+              <td>12.95€</td>
+            </tr>
+            <tr>
+              <td>SHRIMP</td>
+              <td>13.95€</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="menu2 menu">
+          <table>
+            <th>Spicy Miso Ramen</th>
+            <tr>
+              <td>CHICKEN</td>
+              <td>11.95€</td>
+            </tr>
+            <tr>
+              <td>BEEF</td>
+              <td>12.95€</td>
+            </tr>
+            <tr>
+              <td>SHRIMP</td>
+              <td>13.95€</td>
+            </tr>
+          </table>
+          <img src="img/r2.png" />
+        </div>
+
+        <div class="menu3 menu">
+          <img src="img/r3.png" />
+          <table>
+            <th>Shio Ramen</th>
+            <tr>
+              <td>CHICKEN</td>
+              <td class="preis">11.95€</td>
+            </tr>
+            <tr>
+              <td>BEEF</td>
+              <td class="preis">12.95€</td>
+            </tr>
+            <tr>
+              <td>SHRIMP</td>
+              <td class="preis">13.95€</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- 4.Seite ------------------------------------>
+    <div class="fourthP" id="location">
+      <h2 class="hidden">FIND US AT</h2>
+      <div class="adress">
+        <img src="img/platzhalter.png" />
+        <p>Kapuzinierstraße 31, Berlin, BY80987</p>
+      </div>
+      <div class="google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+          width="500"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="logos">
+        <div class="sakuLogo">
+          <img style="width: 75%" src="img/saklogo.png" />
+        </div>
+        <div class="socialLogos">
+          <img src="img/fb.png" /><img src="img/ins.png" /><img
+            src="img/tripad.png"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
